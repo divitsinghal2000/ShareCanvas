@@ -14,5 +14,6 @@
     "heroku": "^7.54.0",
     "socket.io": "^2.3.0",
     "ws": "^7.4.6"
-  }
+  },
+  "devDependencies": {}
 }
