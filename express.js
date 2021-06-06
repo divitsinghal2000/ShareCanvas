@@ -8,6 +8,7 @@ const server = require("http").Server(app);
 const path = require("path");
 const io = require("socket.io")(server);
 // serve static assets to client
+const port = process.env.PORT || 3000;
 app.use(express.static("public"));
 // server
 io.on("connection", function(socket) {
@@ -38,7 +39,7 @@ io.on("connection", function(socket) {
   });
 });
 // nodejs server
-const port = process.env.PORT || 3000;
+
 server.listen(port, function(req, res) {
   console.log("Server has started at port 3000");
 });
